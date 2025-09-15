@@ -15,17 +15,17 @@
             <ColumnDefinition Width="329*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <RadioButton GroupName="Figures" Content="Круг" HorizontalAlignment="Left" Margin="15,15,0,0"/>
-            <RadioButton GroupName="Figures" Content="Прямоугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
-            <RadioButton GroupName="Figures" Content="Треугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+            <RadioButton x:Name="Circle" GroupName="Figures" Content="Круг" HorizontalAlignment="Left" Margin="15,15,0,0"/>
+            <RadioButton x:Name="Rectangle" GroupName="Figures" Content="Прямоугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+            <RadioButton x:Name="Triangle" GroupName="Figures" Content="Треугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Visibility="Hidden">
+        <StackPanel x:Name="CircleData" Grid.Column="1" Visibility="Hidden">
             <Label Content="Радиус"></Label>
             <TextBox Text="0"></TextBox>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Visibility="Hidden">
+        <StackPanel x:Name="RectangleData" Grid.Column="1" Visibility="Hidden">
             <Label Content="Ширина"></Label>
             <TextBox Text="0"></TextBox>
             <Label Content="Высота"></Label>
@@ -41,7 +41,7 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Column="1">
+        <StackPanel x:Name="TriangleData" Grid.Column="1">
             <Label Content="1 сторона(см)"></Label>
             <TextBox Text="0"></TextBox>
             <Label Content="2 сторона(см)"></Label>
