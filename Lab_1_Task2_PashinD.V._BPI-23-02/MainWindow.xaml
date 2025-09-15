@@ -7,6 +7,57 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="165*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"></ColumnDefinition>
+            <ColumnDefinition Width="329*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <RadioButton GroupName="Figures" Content="Круг" HorizontalAlignment="Left" Margin="15,15,0,0"/>
+            <RadioButton GroupName="Figures" Content="Прямоугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+            <RadioButton GroupName="Figures" Content="Треугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Visibility="Hidden">
+            <Label Content="Радиус"></Label>
+            <TextBox Text="0"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Visibility="Hidden">
+            <Label Content="Ширина"></Label>
+            <TextBox Text="0"></TextBox>
+            <Label Content="Высота"></Label>
+            <TextBox Text="0"></TextBox>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Площадь = "></Label>
+                <Label Content="-"></Label>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Периметр = "></Label>
+                <Label Content="-"></Label>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <Label Content="1 сторона(см)"></Label>
+            <TextBox Text="0"></TextBox>
+            <Label Content="2 сторона(см)"></Label>
+            <TextBox Text="0"></TextBox>
+            <Label Content="3 сторона(см)"></Label>
+            <TextBox Text="0"></TextBox>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Площадь = "></Label>
+                <Label Content="-"></Label>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Периметр = "></Label>
+                <Label Content="-"></Label>
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>
