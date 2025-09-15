@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_1_Task2_PashinD.V._BPI-23-02", "Lab_1_Task2_PashinD.V._BPI-23-02\Lab_1_Task2_PashinD.V._BPI-23-02.csproj", "{65D273A2-28AC-4674-8FE8-F80AD61CD977}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65D273A2-28AC-4674-8FE8-F80AD61CD977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D273A2-28AC-4674-8FE8-F80AD61CD977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D273A2-28AC-4674-8FE8-F80AD61CD977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D273A2-28AC-4674-8FE8-F80AD61CD977}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE9EB6FA-5942-42B8-A2CB-7A956492D52A}
+	EndGlobalSection
+EndGlobal
