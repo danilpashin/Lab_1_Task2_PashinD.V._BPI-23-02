@@ -16,13 +16,13 @@ namespace Lab_1_Task2_PashinD.V._BPI_23_02
             Radius = radius;
         }
 
-        public double getArea(double radius)
+        public override double getArea()
         {
-            return Math.PI * (radius * radius);
+            return Math.PI * (Radius * Radius);
         }
-        public double getPerimeter(double radius)
+        public override double getPerimeter()
         {
-            return 2 * radius * Math.PI;
+            return 2 * Radius * Math.PI;
         }
     }
 }
