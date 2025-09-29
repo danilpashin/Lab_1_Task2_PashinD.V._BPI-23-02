@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800" MinWidth="350" MinHeight="250">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
             <RowDefinition Height="165*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -22,17 +22,14 @@
         </StackPanel>
 
         <StackPanel x:Name = "Fields" Grid.Column="1" Margin="5,10,0,0" Width="150" HorizontalAlignment="Left" Visibility="Hidden">
-            <TextBox x:Name = "firstField" Text="0" Margin="0,15,0,0"></TextBox>
-            <TextBox x:Name = "secondField" Text="0" Margin="0,15,0,0"></TextBox>
-            <TextBox x:Name = "thirdField" Text="0" Margin="0,15,0,0"></TextBox>
+            <Label x:Name="firstLabel" Content="Радиус(см)"></Label>
+            <TextBox x:Name = "firstField" Text="0"></TextBox>
+            <Label x:Name="secondLabel" Content="Высота(см)" Visibility="Hidden"></Label>
+            <TextBox x:Name = "secondField" Text="0" Visibility="Hidden"></TextBox>
+            <Label x:Name="thirdLabel" Content="3 сторона(см)" Visibility="Hidden"></Label>
+            <TextBox x:Name = "thirdField" Text="0" Visibility="Hidden"></TextBox>
         </StackPanel>
 
-        <StackPanel x:Name="LabelData" Grid.Column="1" Visibility="Hidden">
-            <Label x:Name="firstLabel" Content="Радиус(см)"></Label>
-            <Label x:Name="secondLabel" Content="Высота(см)" Margin = "0,11,0,0" Visibility="Hidden"></Label>
-            <Label x:Name="thirdLabel" Content="3 сторона(см)" Margin = "0,8,0,0" Visibility="Hidden"></Label>
-        </StackPanel>
-        
         <StackPanel x:Name="CalcData" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Hidden">
             <Label x:Name = "Area" Content="Площадь = "></Label>
             <Label x:Name = "Perimeter" Content="Периметр = "></Label>

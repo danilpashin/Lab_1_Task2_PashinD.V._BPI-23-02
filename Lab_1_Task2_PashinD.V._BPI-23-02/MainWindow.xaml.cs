@@ -37,21 +37,21 @@ namespace Lab_1_Task2_PashinD.V._BPI_23_02
             {
                 firstLabel.Content = "Радиус(см)";
                 SetVisibilityLabels(Visibility.Visible, Visibility.Hidden, Visibility.Hidden);
-                SetVisibility(Visibility.Visible, Visibility.Visible, Visibility.Hidden, Visibility.Hidden);
+                SetVisibility(Visibility.Visible, Visibility.Hidden, Visibility.Hidden);
             }
             else if (selectedFigure == "Прямоугольник")
             {
                 firstLabel.Content = "Ширина(см)";
                 secondLabel.Content = "Высота(см)";
                 SetVisibilityLabels(Visibility.Visible, Visibility.Visible, Visibility.Hidden);
-                SetVisibility(Visibility.Visible, Visibility.Visible, Visibility.Visible, Visibility.Hidden);
+                SetVisibility(Visibility.Visible, Visibility.Visible, Visibility.Hidden);
             }
             else if (selectedFigure == "Треугольник")
             {
                 firstLabel.Content = "1 сторона(см)";
                 secondLabel.Content = "2 сторона(см)";
                 SetVisibilityLabels(Visibility.Visible, Visibility.Visible, Visibility.Visible);
-                SetVisibility(Visibility.Visible, Visibility.Visible, Visibility.Visible, Visibility.Visible);
+                SetVisibility(Visibility.Visible, Visibility.Visible, Visibility.Visible);
             }
         }
 
@@ -134,11 +134,10 @@ namespace Lab_1_Task2_PashinD.V._BPI_23_02
             FigureLoad();
         }
 
-        private void SetVisibility(Visibility labels, Visibility firstFieldA, Visibility secondFieldA, Visibility thirdFieldA)
+        private void SetVisibility(Visibility firstFieldA, Visibility secondFieldA, Visibility thirdFieldA)
         {
             Fields.Visibility = Visibility.Visible;
             CalcData.Visibility = Visibility.Visible;
-            LabelData.Visibility = labels;
             firstField.Visibility = firstFieldA;
             secondField.Visibility = secondFieldA;
             thirdField.Visibility = thirdFieldA;
