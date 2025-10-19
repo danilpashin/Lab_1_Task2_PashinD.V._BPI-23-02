@@ -6,6 +6,28 @@
         xmlns:local="clr-namespace:Lab_1_Task2_PashinD.V._BPI_23_02"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinWidth="350" MinHeight="250">
+    <Window.Resources>
+        <Style TargetType="local:MainWindow">
+            <Setter Property="Background" Value="#FF071827" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#FFB6DDFF" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Bahnschrift Light" />
+            <Setter Property="Foreground" Value="#FF7ABECD" />
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="FontFamily" Value="Bahnschrift Light" />
+            <Setter Property="Foreground" Value="#FF7ABECD" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Bahnschrift Light" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF5EC3FF" />
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="150"></RowDefinition>
