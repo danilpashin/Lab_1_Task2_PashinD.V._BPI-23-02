@@ -6,28 +6,7 @@
         xmlns:local="clr-namespace:Lab_1_Task2_PashinD.V._BPI_23_02"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinWidth="350" MinHeight="250">
-    <Window.Resources>
-        <Style TargetType="local:MainWindow">
-            <Setter Property="Background" Value="#FF071827" />
-        </Style>
-        <Style TargetType="TextBox">
-            <Setter Property="Background" Value="#FFB6DDFF" />
-        </Style>
-        <Style TargetType="Label">
-            <Setter Property="FontFamily" Value="Bahnschrift Light" />
-            <Setter Property="Foreground" Value="#FF7ABECD" />
-        </Style>
-        <Style TargetType="RadioButton">
-            <Setter Property="FontFamily" Value="Bahnschrift Light" />
-            <Setter Property="Foreground" Value="#FF7ABECD" />
-        </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Bahnschrift Light" />
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="#FF5EC3FF" />
-        </Style>
-    </Window.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="150"></RowDefinition>
@@ -38,9 +17,9 @@
             <ColumnDefinition Width="150*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel VerticalAlignment="Center">
-            <RadioButton Checked="RadioButton_Checked" x:Name="Circle" GroupName="Figures" Content="Круг" HorizontalAlignment="Left" Margin="15,15,0,0"/>
-            <RadioButton Checked="RadioButton_Checked" x:Name="Rectangle" GroupName="Figures" Content="Прямоугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
-            <RadioButton Checked="RadioButton_Checked" x:Name="Triangle" GroupName="Figures" Content="Треугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+            <RadioButton  Checked="RadioButton_Checked" x:Name="Circle" GroupName="Figures" Content="Круг" HorizontalAlignment="Left" Margin="15,15,0,0" Template="{DynamicResource RadioButtonTemplate1}"/>
+            <RadioButton Checked="RadioButton_Checked" x:Name="Rectangle" GroupName="Figures" Content="Прямоугольник" HorizontalAlignment="Left" Margin="15,0,0,0" Template="{DynamicResource RadioButtonTemplate1}"/>
+            <RadioButton Checked="RadioButton_Checked" x:Name="Triangle" GroupName="Figures" Content="Треугольник" HorizontalAlignment="Left" Margin="15,0,0,0" Template="{DynamicResource RadioButtonTemplate1}"/>
         </StackPanel>
 
         <StackPanel x:Name = "Fields" Grid.Column="1" Margin="5,10,0,0" Width="150" HorizontalAlignment="Left" Visibility="Hidden">

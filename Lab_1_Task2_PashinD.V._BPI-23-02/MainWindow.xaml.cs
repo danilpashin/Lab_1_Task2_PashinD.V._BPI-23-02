@@ -138,6 +138,9 @@ namespace Lab_1_Task2_PashinD.V._BPI_23_02
         {
             Fields.Visibility = Visibility.Visible;
             CalcData.Visibility = Visibility.Visible;
+            firstField.Text = "0";
+            secondField.Text = "0";
+            thirdField.Text = "0";
             firstField.Visibility = firstFieldA;
             secondField.Visibility = secondFieldA;
             thirdField.Visibility = thirdFieldA;
