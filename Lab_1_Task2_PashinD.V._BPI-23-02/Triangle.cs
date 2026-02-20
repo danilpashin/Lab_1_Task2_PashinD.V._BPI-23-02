@@ -22,13 +22,14 @@ namespace Lab_1_Task2_PashinD.V._BPI_23_02
             C = c;
         }
 
-        public double getArea(double a, double b, double c, double p)
+        public override double getArea()
         {
-            return Math.Sqrt(p*(p-a)*(p-b)*(p-c));
+            double p = getPerimeter();
+            return Math.Sqrt(p*(p-A)*(p-B)*(p-C));
         }
-        public double getPerimeter(double a, double b, double c)
+        public override double getPerimeter()
         {
-            return a+b+c;
+            return A+B+C;
         }
     }
 }

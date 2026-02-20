@@ -19,13 +19,13 @@ namespace Lab_1_Task2_PashinD.V._BPI_23_02
             Height = height;
         }
 
-        public double getArea(double width, double height)
+        public override double getArea()
         {
-            return width*height;
+            return Width*Height;
         }
-        public double getPerimeter(double width, double height)
+        public override double getPerimeter()
         {
-            return 2 * width + 2 * height;
+            return 2 * Width + 2 * Height;
         }
     }
 }

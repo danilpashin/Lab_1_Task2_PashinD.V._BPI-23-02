@@ -5,59 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_1_Task2_PashinD.V._BPI_23_02"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" MinWidth="350" MinHeight="250">
+
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
             <RowDefinition Height="165*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="67*"></ColumnDefinition>
-            <ColumnDefinition Width="329*"></ColumnDefinition>
+            <ColumnDefinition Width="130"></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel>
-            <RadioButton GroupName="Figures" Content="Круг" HorizontalAlignment="Left" Margin="15,15,0,0"/>
-            <RadioButton GroupName="Figures" Content="Прямоугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
-            <RadioButton GroupName="Figures" Content="Треугольник" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+        <StackPanel VerticalAlignment="Center">
+            <RadioButton  Checked="RadioButton_Checked" x:Name="Circle" GroupName="Figures" Content="Круг" HorizontalAlignment="Left" Margin="15,15,0,0" Template="{DynamicResource RadioButtonTemplate1}"/>
+            <RadioButton Checked="RadioButton_Checked" x:Name="Rectangle" GroupName="Figures" Content="Прямоугольник" HorizontalAlignment="Left" Margin="15,0,0,0" Template="{DynamicResource RadioButtonTemplate1}"/>
+            <RadioButton Checked="RadioButton_Checked" x:Name="Triangle" GroupName="Figures" Content="Треугольник" HorizontalAlignment="Left" Margin="15,0,0,0" Template="{DynamicResource RadioButtonTemplate1}"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Visibility="Hidden">
-            <Label Content="Радиус"></Label>
-            <TextBox Text="0"></TextBox>
+        <StackPanel x:Name = "Fields" Grid.Column="1" Margin="5,10,0,0" Width="150" HorizontalAlignment="Left" Visibility="Hidden">
+            <Label x:Name="firstLabel" Content="Радиус(см)"></Label>
+            <TextBox x:Name = "firstField" Text="0"></TextBox>
+            <Label x:Name="secondLabel" Content="Высота(см)" Visibility="Hidden"></Label>
+            <TextBox x:Name = "secondField" Text="0" Visibility="Hidden"></TextBox>
+            <Label x:Name="thirdLabel" Content="3 сторона(см)" Visibility="Hidden"></Label>
+            <TextBox x:Name = "thirdField" Text="0" Visibility="Hidden"></TextBox>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Visibility="Hidden">
-            <Label Content="Ширина"></Label>
-            <TextBox Text="0"></TextBox>
-            <Label Content="Высота"></Label>
-            <TextBox Text="0"></TextBox>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Площадь = "></Label>
-                <Label Content="-"></Label>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Периметр = "></Label>
-                <Label Content="-"></Label>
-            </StackPanel>
+        <StackPanel x:Name="CalcData" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Hidden">
+            <Label x:Name = "Area" Content="Площадь = "></Label>
+            <Label x:Name = "Perimeter" Content="Периметр = "></Label>
+            <Button x:Name="Calc" Width = "100" HorizontalAlignment="Left" Margin = "5,5,0,0" Content="Вычислить" Click="Calculate"></Button>
         </StackPanel>
-
-        <StackPanel Grid.Column="1">
-            <Label Content="1 сторона(см)"></Label>
-            <TextBox Text="0"></TextBox>
-            <Label Content="2 сторона(см)"></Label>
-            <TextBox Text="0"></TextBox>
-            <Label Content="3 сторона(см)"></Label>
-            <TextBox Text="0"></TextBox>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Площадь = "></Label>
-                <Label Content="-"></Label>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Периметр = "></Label>
-                <Label Content="-"></Label>
-            </StackPanel>
-        </StackPanel>
+        
 
     </Grid>
 </Window>
